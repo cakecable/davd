@@ -131,26 +131,33 @@
     }
 }
 </style>
-<body>
-    <div class="mt-16">
-    <h1 id="specialties">Education</h1>
-    <div class="education-section">
-        <img src="https://github.com/cakecable/davd/blob/main/assets/imgs/seneca-valley.png?raw=true" href="https://www.montgomeryschoolsmd.org/schools/senecavalleyhs/" alt="University Logo" class="highschool-logo">
-        <div class="university-details">
-            <p class="university-name">Seneca Valley High School</p>
-            <p class="degree">Information Technology and Computer Science student</p>
-        </div>
-        <p class="years">2021 - 2025</p>
+  <h1 class="education-heading">Education</h1>
+  <div class="education-list">
+    <!-- Education Item 1 -->
+    <div class="education-item">
+      <img 
+        src="https://github.com/cakecable/davd/blob/main/assets/imgs/UMD.png?raw=true" 
+        alt="University of Maryland logo" 
+        class="education-logo"
+      />
+      <div class="education-details">
+        <h3 class="education-school">
+          <a
+            href="https://umd.edu/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="education-school-link"
+          >
+            University of Maryland
+          </a>
+        </h3>
+        <p class="education-degree">
+          Bachelor of Technology in Computer Science and Engineering
+        </p>
+      </div>
+      <div class="education-years">2025 - 2029</div>
     </div>
-    <div class="education-section">
-        <img src="https://github.com/cakecable/davd/blob/main/assets/imgs/UMD.png?raw=true" alt="University Logo" class="university-logo">
-        <div class="university-details">
-            <p class="university-name">University of Maryland</p>
-            <p class="degree">Bachelor of Technology in Computer Science and Engineering</p>
-        </div>
-        <p class="years">2025 - 2029</p>
-    </div>
-</body>
+  </div>
 <div class="mt-16">
     <h1 id="specialties">Recent Projects</h1>
     <div class="flex flex-col gap-4 experience-container">
@@ -185,9 +192,7 @@
         </a>
     </div>
 </div>
-</style>
 <div>
-<a class="">More projects<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 transition-transform duration-300 group-hover:translate-x-1"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg></a></div></div>
 
 
                         </main>
@@ -1416,6 +1421,70 @@ figcaption {
 .\[\&\>\*\]\:pb-4>* {
   padding-bottom: 1rem
 }
+</style>
+<style>
+    /* General styles for the education section */
+.education-section {
+  margin-top: 4rem; /* mt-16 */
+}
+
+.education-heading {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold; /* font-bold */
+  text-align: center; /* text-center */
+  margin-bottom: 2rem; /* mb-8 */
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+}
+
+.education-item {
+  display: flex;
+  align-items: center; /* items-center */
+  gap: 1.5rem; /* gap-6 */
+  padding: 1rem; /* p-4 */
+  background-color: #111111; /* bg-gray-800/30 */
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+.education-logo {
+  width: 4rem; /* w-16 */
+  height: 4rem; /* h-16 */
+  object-fit: contain; /* object-contain */
+}
+
+.education-details {
+  flex-grow: 1; /* flex-grow */
+}
+
+.education-school {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  color: white; /* text-white */
+}
+
+.education-school-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* transition-colors */
+}
+
+.education-school-link:hover {
+  color: #31929A; /* hover:text-[#31929A] */
+}
+
+.education-degree {
+  color: #9CA3AF; /* text-gray-400 */
+}
+
+.education-years {
+  color: #6B7280; /* text-gray-500 */
+  font-size: 0.875rem; /* text-sm */
+}
+
 </style>
 <script>
 function updateTime() {
